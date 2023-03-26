@@ -16,9 +16,7 @@
 		<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://cdn.bootcdn.net/ajax/libs/superfish/1.7.4/superfish.min.css" rel="stylesheet">
 		<link rel='stylesheet' id='kratos-style-css'  href='<?php $this->options->themeUrl('css/style.css?ver=2.5.2'); ?>' type='text/css' media='all' />
-
-                <link href="https://www.chengzhi233.cn/404.css" type="text/css" rel="stylesheet">
-
+        <link href="<?php $this->options->themeUrl('css/404.css'); ?>" type="text/css" rel="stylesheet">
 		<?php if($this->options->site_bw == 'able'): ?>
 			<style type="text/css">html{filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);filter: gray;-webkit-filter: grayscale(1); }
 			</style>

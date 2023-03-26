@@ -1,0 +1,23 @@
+@charset "utf-8";
+p{
+	text-align: center;
+}
+.ASD{
+	line-height: 30px;
+	color: #66CCFF;
+	font-weight: 800;
+	font-size: 25px;
+	font-family: "方正喵呜简体"
+}
+.no{
+	font-size: 30px;
+	line-height: 0px;
+	font-weight: 600;
+	font-style: italic;
+	color: #87CEEB;
+	font-family: "微软雅黑"
+}
+.acs{
+	position: static;
+}
+/*阿sir别骂了别骂了，我真不会写CSS啊*/
