@@ -26,7 +26,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
                     <div><?php echo $this->options->actionbar(); ?><div/>
                     <div id="mytime">不要停下来啊</div>
-                    <div>Theme by <a href="https://typecho.me/1555.html">Kratos</a>&nbsp;Powered by <a href="http://typecho.org/">Typecho</a></div>
+                    <div>Theme by <a href="https://github.com/chengzhi233/Kratos">Kratos-C</a>&nbsp;Powered by <a href="http://typecho.org/">Typecho</a></div>
                 </div>
             </div>
         </div>
