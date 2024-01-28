@@ -1,4 +1,5 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php if (!defined('__TYPECHO_ROOT_DIR__'))
+    exit; ?>
 <!DOCTYPE HTML>
 <html class="no-js">
 
@@ -8,7 +9,10 @@
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><?php $this->archiveTitle(array('category' => _t(' %s '), 'search' => _t(' %s '), 'tag' => _t(' %s '), 'author' => _t(' %s ')), '', ' - '); ?> <?php $this->options->title(); ?></title>
+    <title>
+        <?php $this->archiveTitle(array('category' => _t(' %s '), 'search' => _t(' %s '), 'tag' => _t(' %s '), 'author' => _t(' %s ')), '', ' - '); ?>
+        <?php $this->options->title(); ?>
+    </title>
     <meta name="keywords" content="<?php $this->keywords() ?>" />
     <?php $this->header('keywords=&generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
     <link rel="shortcut icon" href="/favicon.ico">
@@ -16,8 +20,9 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/superfish/1.7.4/superfish.min.css" rel="stylesheet">
-    <link rel='stylesheet' id='kratos-style-css' href='<?php $this->options->themeUrl('css/style.css?ver=2.5.2'); ?>' type='text/css' media='all' />
-    <?php if ($this->options->site_bw == 'able') : ?>
+    <link rel='stylesheet' id='kratos-style-css' href='<?php $this->options->themeUrl('css/style.css?ver=2.5.2'); ?>'
+        type='text/css' media='all' />
+    <?php if ($this->options->site_bw == 'able'): ?>
         <style type="text/css">
             html {
                 filter: grayscale(100%);
@@ -45,8 +50,10 @@
                                 <ul id="kratos-primary-menu" class="sf-menu">
                                     <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
                                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-                                    <?php while ($pages->next()) : ?>
-                                        <li><a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a></li>
+                                    <?php while ($pages->next()): ?>
+                                        <li><a href="<?php $pages->permalink(); ?>">
+                                                <?php $pages->title(); ?>
+                                            </a></li>
                                     <?php endwhile; ?>
                                 </ul>
                             </nav>
@@ -56,9 +63,14 @@
             </div>
             <div class="kratos-start kratos-hero-2">
                 <div class="kratos-overlay"></div>
-                <div class="kratos-cover kratos-cover_2 text-center" style="background-image: url(<?php ($this->options->bannerimg) ? $this->options->bannerimg() : $this->options->themeUrl('images/head.png'); ?>);">
+                <div class="kratos-cover kratos-cover_2 text-center"
+                    style="background-image: url(<?php ($this->options->bannerimg) ? $this->options->bannerimg() : $this->options->themeUrl('images/head.png'); ?>);">
                     <div class="desc desc2 animate-box">
-                        <h2><?php $this->options->logoTxt(); ?></h2><span><?php $this->options->logoTxt2(); ?> </span>
+                        <h2>
+                            <?php $this->options->logoTxt(); ?>
+                        </h2><span>
+                            <?php $this->options->logoTxt2(); ?>
+                        </span>
                     </div>
                 </div>
             </div>
