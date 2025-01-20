@@ -61,10 +61,30 @@ $this->need('header.php'); ?>
 									<p>
 										<?php
 										preg_match_all("/\<img.*?src\=(\'|\")(.*?)(\'|\")[^>]*>/i", $this->content, $matches);
-										if (count($matches[0]) >= 1)
-											$this->excerpt(120, '...');
-										else
-											$this->excerpt(200, '...');
+										// echo("<script>console.log(\"".$this->excerpt(120, '...')."\");</script>");
+										if (count($matches[0]) >= 1) {
+											if ($this->fields->abstract != "" && $this->fields->abstract != "Null") {
+												$len = mb_strlen($this->fields->abstract);
+												if ($len > 120)
+													$msg = b_substr($this->fields->abstract, 0, 120, ) + '...';
+												else
+													$msg = $this->fields->abstract;
+												echo ($msg);
+											} else
+												$this->excerpt(120, '...');
+
+										} else {
+											if ($this->fields->abstract != "" && $this->fields->abstract != "Null") {
+												$len = mb_strlen($this->fields->abstract);
+												if ($len > 200)
+													$msg = b_substr($this->fields->abstract, 0, 200, ) + '...';
+												else
+													$msg = $this->fields->abstract;
+												echo ($msg);
+											} else
+												$this->excerpt(200, '...');
+
+										}
 										?>
 									</p>
 								</div>

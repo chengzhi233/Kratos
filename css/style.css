@@ -78,7 +78,7 @@ code {
 	color:#333;
 	background-color:#f8f8f8;
 	border-radius:0;
-	border:1px solid #E1E1E1;
+	/* border:1px solid #E1E1E1; */
 	margin:0
 }
 cite {
@@ -99,8 +99,14 @@ kbd {
 article a {
 	color:#333
 }
-table,table tbody tr th {
-	text-align:center!important
+table {
+    border: 1px solid #66ccff;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #66ccff;
+    padding: 8px;
 }
 .panel-body {
 	color:#000

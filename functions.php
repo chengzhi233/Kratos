@@ -168,8 +168,8 @@ function themeFields($layout)
 {
     $thumb = new Typecho_Widget_Helper_Form_Element_Text('thumb', NULL, NULL, _t('自定义缩略图'), _t('输入缩略图地址，填写Null不显示任何图片(仅文章有效)'));
     $layout->addItem($thumb);
-    // $abstract = new Typecho_Widget_Helper_Form_Element_Text('thumb', NULL, NULL, _t('自定义摘要'), _t('输入自定义摘要，不填写自动以文章作为摘要(仅文章有效)'));
-    // $layout->addItem($abstract);
+    $abstract = new Typecho_Widget_Helper_Form_Element_Textarea('abstract', NULL, NULL, _t('自定义摘要'), _t('输入自定义摘要，不填写自动以文章作为摘要(仅文章有效)'));
+    $layout->addItem($abstract);
 }
 
 function email_avatar($email)

@@ -45,6 +45,11 @@ if (!defined('__TYPECHO_ROOT_DIR__'))
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
 <script type='text/javascript' src='<?php $this->options->themeUrl('js/superfish.min.js'); ?>'></script>
 <script type='text/javascript' src='<?php $this->options->themeUrl('js/kratos.js?ver=2.5.2'); ?>'></script>
+<script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <?php if (!$this->options->sidebarlr == 'single'): ?>
     <script type="text/javascript">
         if ($("#main").height() > $("#sidebar").height()) {
