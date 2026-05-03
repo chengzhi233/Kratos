@@ -8,4 +8,4 @@
 6. 首页摘要字数超出修复
 7. 自定义摘要
     ___
-   [演示站](https://www.chengzhi233.com/)
+   [演示站](https://kratos.chengzhi233.com/)

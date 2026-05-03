@@ -4,8 +4,8 @@
  * 
  * @package Kratos模板Typecho版
  * @author 橙汁汁
- * @version Bata 1.0
- * @link https://www.chengzhi233.cn/
+ * @version 1.0
+ * @link https://www.chengzhi233.com/
  */
 if (!defined('__TYPECHO_ROOT_DIR__'))
 	exit;
